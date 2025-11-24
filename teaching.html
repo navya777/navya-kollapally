@@ -4,36 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Teaching — Navya Martin Kollapally</title>
-
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ["Inter", "ui-sans-serif", "system-ui"]
+            sans: ["Inter","ui-sans-serif","system-ui"]
           },
           boxShadow: { glow: "0 0 40px rgba(20,184,166,.25)" }
         }
-      }
-    };
+      },
+      darkMode: 'class'
+    }
   </script>
 
   <style>
-    .timeline-dot {
-      width: 12px;
-      height: 12px;
-      background-color: #14b8a6;
-      border-radius: 50%;
-      border: 2px solid white;
-      position: absolute;
-      left: -6px;
-      top: 6px;
-    }
-    .timeline-line {
-      border-left: 2px solid #d1d5db;
-      margin-left: 6px;
-      padding-left: 20px;
+    .gradient-accent {
+      background: linear-gradient(90deg, #0ea5e9, #14b8a6);
+      height: 3px;
+      width: 80px;
+      border-radius: 9999px;
     }
   </style>
 </head>
@@ -47,7 +39,7 @@
         </div>
     </header>
 
-    <!-- UNIFIED NAVIGATION -->
+    <!-- CONSISTENT NAVIGATION -->
     <nav style="text-align:center; margin-top:1.5rem; font-size:1.1rem;">
         <a href="index.html">Home</a> |
         <a href="research.html">Research</a> |
@@ -59,45 +51,40 @@
 
     <!-- MAIN CONTENT -->
     <main class="max-w-5xl mx-auto px-6 py-16">
-        <h1 class="text-4xl font-extrabold mb-4">Teaching</h1>
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-3">Teaching</h1>
+        <div class="gradient-accent mb-10"></div>
+
         <p class="text-lg text-gray-600 mb-10">
-            Selected courses and mentorship.
+            Selected courses and mentorship by Navya Martin Kollapally.
         </p>
 
-        <!-- Teaching Timeline -->
-        <div class="timeline-line">
-<!-- Course 1 -->
-          <div class="relative mb-10">
-            <div class="timeline-dot"></div>
-            <h3 class="font-semibold text-xl">Text Mining and Language Processing (CPS 4845)</h3>
-            <p class="text-gray-600 mt-1">
-              Java, pair programming, AI-assisted coding tools.
-            </p>
-          </div>
+        <ol class="mt-6 relative border-s border-gray-300">
+          
+          <!-- CPS 2231 -->
+          <li class="mb-8 ms-4">
+            <div class="absolute w-3 h-3 bg-teal-400 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+            <h3 class="font-semibold">Computer Programming (CPS 2231)</h3>
+            <p class="text-sm text-gray-600">Java, pair programming, AI-assisted coding tools.</p>
+          </li>
 
-          <!-- Course 2 -->
-          <div class="relative mb-10">
-            <div class="timeline-dot"></div>
-            <h3 class="font-semibold text-xl">Computer Programming (CPS 2231)</h3>
-            <p class="text-gray-600 mt-1">
-              Java, pair programming, AI-assisted coding tools.
-            </p>
-          </div>
+          <!-- TECH 3740 -->
+          <li class="mb-8 ms-4">
+            <div class="absolute w-3 h-3 bg-teal-400 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+            <h3 class="font-semibold">Database System Concepts & Applications (TECH 3740)</h3>
+            <p class="text-sm text-gray-600">Relational design, SQL, normalization, transactions.</p>
+          </li>
 
-          <!-- Course 3 -->
-          <div class="relative mb-10">
-            <div class="timeline-dot"></div>
-            <h3 class="font-semibold text-xl">Database System Concepts & Applications (TECH 3740)</h3>
-            <p class="text-gray-600 mt-1">
-              Relational design, SQL, normalization, transactions.
-            </p>
-          </div>
+          <!-- NEW: CPS 4845 -->
+          <li class="mb-8 ms-4">
+            <div class="absolute w-3 h-3 bg-teal-400 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+            <h3 class="font-semibold">Text Mining and Language Processing (CPS 4845)</h3>
+            <p class="text-sm text-gray-600">NLP foundations, text classification, embeddings, transformers.</p>
+          </li>
 
-        </div>
+        </ol>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="mt-16 py-10 border-t text-sm text-center">
+    <footer class="mt-20 py-10 border-t text-sm text-center">
       © <script>document.write(new Date().getFullYear())</script> Navya Martin Kollapally. All rights reserved.
     </footer>
 
