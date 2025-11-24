@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Service — Navya Martin Kollapally</title>
+  <title>Services — Navya Martin Kollapally</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
@@ -19,18 +19,24 @@
       }
     }
   </script>
+
+  <style>
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.75), rgba(255,255,255,.55));
+    }
+  </style>
 </head>
 
 <body class="font-sans bg-gray-50 text-gray-800">
 
-    <!-- CONSISTENT HEADER -->
-    <header style="background-color:#0033a0; padding: 1rem 0;">
+    <!-- CONSISTENT BLUE HEADER -->
+    <header style="background-color:#0033A0; padding: 1rem 0;">
         <div style="text-align:center; color:white; font-size:1.2rem; font-weight:bold;">
             KEAN UNIVERSITY
         </div>
     </header>
 
-    <!-- CONSISTENT NAVIGATION -->
+    <!-- SIMPLE CONSISTENT NAVIGATION -->
     <nav style="text-align:center; margin-top:1.5rem; font-size:1.1rem;">
         <a href="index.html">Home</a> |
         <a href="research.html">Research</a> |
@@ -42,43 +48,41 @@
 
     <!-- MAIN CONTENT -->
     <main class="max-w-6xl mx-auto px-6 py-16">
-        <h1 class="text-4xl font-extrabold mb-3">Service</h1>
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-3">Service</h1>
+        <div style="background:#0ea5e9; height:3px; width:80px; border-radius:9999px;" class="mb-10"></div>
 
         <p class="text-lg text-gray-600 mb-10">
             How I collaborate with teams, clinicians, and students.
         </p>
 
-        <!-- SERVICE CARDS (preserved from original file) -->
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <div class="rounded-2xl p-6 bg-white shadow-glow border border-gray-200">
-                <h3 class="font-semibold text-lg">Research & Prototyping</h3>
-                <p class="mt-2 text-sm text-gray-700">
-                    LLM-assisted ontology design, evaluation, and clinical NLP pipelines.
-                </p>
+            <div class="card rounded-2xl border border-gray-200 p-5 shadow hover:shadow-lg transition">
+              <h3 class="font-semibold">Research & Prototyping</h3>
+              <p class="mt-2 text-sm text-gray-700">
+                LLM-assisted ontology design, evaluation, and clinical NLP pipelines.
+              </p>
             </div>
 
-            <div class="rounded-2xl p-6 bg-white shadow-glow border border-gray-200">
-                <h3 class="font-semibold text-lg">Data & Automation</h3>
-                <p class="mt-2 text-sm text-gray-700">
-                    ETL, experimentation frameworks, dashboards, and reproducible workflows.
-                </p>
+            <div class="card rounded-2xl border border-gray-200 p-5 shadow hover:shadow-lg transition">
+              <h3 class="font-semibold">Data & Automation</h3>
+              <p class="mt-2 text-sm text-gray-700">
+                ETL, experimentation frameworks, dashboards, and reproducible workflows.
+              </p>
             </div>
 
-            <div class="rounded-2xl p-6 bg-white shadow-glow border border-gray-200">
-                <h3 class="font-semibold text-lg">Mentorship & Teaching</h3>
-                <p class="mt-2 text-sm text-gray-700">
-                    Course design, workshops, and coaching for student research groups.
-                </p>
+            <div class="card rounded-2xl border border-gray-200 p-5 shadow hover:shadow-lg transition">
+              <h3 class="font-semibold">Mentorship & Teaching</h3>
+              <p class="mt-2 text-sm text-gray-700">
+                Course design, workshops, and coaching for student research groups.
+              </p>
             </div>
 
         </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="mt-20 py-10 border-t text-sm text-center">
-        © <script>document.write(new Date().getFullYear())</script>
-        Navya Martin Kollapally. All rights reserved.
+    <footer class="mt-20 py-10 border-t text-sm text-center text-gray-600">
+      © <script>document.write(new Date().getFullYear())</script> Navya Martin Kollapally. All rights reserved.
     </footer>
 
 </body>
