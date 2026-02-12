@@ -1,117 +1,104 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects — Navya Martin Kollapally</title>
-  <meta name="description" content="Portfolio of Navya Martin Kollapally" />
-  <meta name="theme-color" content="#14b8a6" />
+  <title>Projects — Navya Martin Kollapally, Ph.D. | Kean University</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {{
-      theme: {{
-        extend: {{
-          fontFamily: {{ sans: ["Inter","ui-sans-serif","system-ui"] }},
-          boxShadow: {{ glow: "0 0 40px rgba(20,184,166,.25)" }}
-        }}
-      }},
-      darkMode: 'class'
-    }}
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :focus-visible {{ outline: 3px solid #22d3ee; outline-offset: 3px }}
-    .gradient-bg {{ background-image: radial-gradient(80% 60% at 20% 10%, rgba(59,130,246,.25), transparent 60%), radial-gradient(80% 60% at 80% 20%, rgba(45,212,191,.25), transparent 60%), linear-gradient(135deg, #0ea5e9 0%, #14b8a6 45%, #86efac 100%) }}
-    .card {{ background: linear-gradient(180deg, rgba(255,255,255,.75), rgba(255,255,255,.55)); }}
-    .dark .card {{ background: linear-gradient(180deg, rgba(17,24,39,.65), rgba(17,24,39,.45)); }}
-    .fade-enter {{ opacity: 0; transform: translateY(6px); }}
-    .fade-enter-active {{ opacity: 1; transform: translateY(0); transition: all .45s ease; }}
-    .navlink:hover {{ text-decoration: underline; text-underline-offset: 6px; }}
-  </style>
-  <script>
-    (function() {{
-      const stored = localStorage.getItem('theme');
-      if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {{
-        document.documentElement.classList.add('dark');
-      }}
-    }})();
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { kean: { blue: "#0033A0" } },
+          fontFamily: { sans: ["Inter","ui-sans-serif","system-ui"] }
+        }
+      }
+    };
   </script>
 </head>
-<body class="font-sans bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
-  <div class="absolute -z-10 inset-0 gradient-bg opacity-20 dark:opacity-30"></div>
 
-<header class="sticky top-0 z-40 backdrop-blur border-b border-white/30 dark:border-white/10 bg-white/60 dark:bg-gray-900/50">
-  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-    <a href="index.html" class="text-lg font-extrabold tracking-tight">NMK<span class="text-teal-400">•</span></a>
-    <div class="hidden sm:flex items-center gap-2 text-sm"><a class="navlink px-3 py-2 rounded-xl hover:bg-white/60 dark:hover:bg-gray-800/60" href="index.html">Home</a><a class="navlink px-3 py-2 rounded-xl bg-white/70 dark:bg-gray-800/70 shadow-glow" href="projects.html">Projects</a><a class="navlink px-3 py-2 rounded-xl hover:bg-white/60 dark:hover:bg-gray-800/60" href="publications.html">Publications</a><a class="navlink px-3 py-2 rounded-xl hover:bg-white/60 dark:hover:bg-gray-800/60" href="services.html">Services</a><a class="navlink px-3 py-2 rounded-xl hover:bg-white/60 dark:hover:bg-gray-800/60" href="teaching.html">Teaching</a><a class="navlink px-3 py-2 rounded-xl hover:bg-white/60 dark:hover:bg-gray-800/60" href="accomplishments.html">Accomplishments</a><a class="navlink px-3 py-2 rounded-xl hover:bg-white/60 dark:hover:bg-gray-800/60" href="contact.html">Contact</a></div>
-    <div class="flex items-center gap-2">
-      <a href="resume.pdf" download class="hidden sm:inline-flex text-sm px-3 py-2 rounded-xl border border-white/40 dark:border-white/10 hover:bg-white/60 dark:hover:bg-gray-800/60">Résumé</a>
-      <button id="themeToggle" class="text-sm px-3 py-2 rounded-xl border border-white/40 dark:border-white/10 hover:bg-white/60 dark:hover:bg-gray-800/60">Theme</button>
-    </div>
+<body class="font-sans bg-white text-gray-900">
+  <div class="w-full bg-kean-blue text-white py-2 px-6 text-sm font-semibold text-center">
+    <a href="https://www.kean.edu" target="_blank" rel="noopener noreferrer">KEAN UNIVERSITY</a>
+  </div>
+
+  <header class="border-b border-gray-200 py-8 px-6 text-center">
+    <img src="assets/NavyaMartin_Kollapally.jpeg" alt="Navya Martin Kollapally"
+      class="w-28 h-28 mx-auto rounded-xl object-cover shadow-lg hover:shadow-2xl transition-all mb-4">
+    <h1 class="text-3xl font-bold">Navya Martin Kollapally, Ph.D.</h1>
+    <p class="text-lg text-gray-700">Assistant Professor, Department of Computer Science — Kean University</p>
+  </header>
+
+  <!-- ✅ Updated nav: includes Projects -->
+  <nav class="border-b border-gray-200 bg-gray-50 py-2 px-6 text-sm flex justify-center gap-6">
+    <a href="index.html" class="hover:text-kean-blue">Home</a>
+    <a href="research.html" class="hover:text-kean-blue">Research</a>
+    <a href="projects.html" class="text-kean-blue font-semibold">Projects</a>
+    <a href="publications.html" class="hover:text-kean-blue">Publications</a>
+    <a href="teaching.html" class="hover:text-kean-blue">Teaching</a>
+    <a href="services.html" class="hover:text-kean-blue">Service</a>
+    <a href="contact.html" class="hover:text-kean-blue">Contact</a>
   </nav>
-</header>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const main = document.querySelector('main'); if (main) { main.classList.add('fade-enter'); setTimeout(() => main.classList.add('fade-enter-active'), 0); }
-    const t = document.getElementById('themeToggle'); if (t) t.addEventListener('click', () => {
-      const isDark = document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  });
-</script>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <h1 class="text-3xl font-extrabold">Current Projects</h1>
-  <p class="mt-2 text-gray-600 dark:text-gray-300">Selected ongoing and recent work.</p>
-  <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <article class="card rounded-2xl border border-white/40 dark:border-white/10 p-5 hover:shadow-glow">
-      <h3 class="font-semibold text-lg">Ontology Enrichment with LLMs</h3>
-      <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">Applying lexical, semantic, and knowledge-network similarity for concept placement and automatic enrichment.</p>
-      <div class="mt-4 text-sm"><a class="navlink" href="publications.html">Related paper</a></div>
-    </article>
-    <article class="card rounded-2xl border border-white/40 dark:border-white/10 p-5 hover:shadow-glow">
-      <h3 class="font-semibold text-lg">Clinical Interface Terminology</h3>
-      <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">Using clinical NER and ML to curate an interface terminology enabling fast skimming of EHRs.</p>
-      <div class="mt-4 text-sm"><a class="navlink" href="publications.html">Conference paper</a></div>
-    </article>
-    <article class="card rounded-2xl border border-white/40 dark:border-white/10 p-5 hover:shadow-glow">
-      <h3 class="font-semibold text-lg">SDoH / SDoEd Ontologies</h3>
-      <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">Developing unified ontologies for social & commercial determinants of health and education.</p>
-      <div class="mt-4 text-sm"><a class="navlink" href="publications.html">Multiple publications</a></div>
-    </article>
-    <article class="card rounded-2xl border border-white/40 dark:border-white/10 p-5 hover:shadow-glow">
-  <h3 class="font-semibold text-lg">Student Project: <span class="font-bold">[Project Title]</span></h3>
-  <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
-    Developed by <strong>Jonathan Argudo</strong>.A comprehensive research platform for comparing Automatic Speech Recognition (ASR) frameworks across multiple languages, with emphasis on low-resource language acoustic modeling performance.
-  </p>
 
-  <div class="mt-4 flex items-center gap-4 text-sm">
-    <a class="inline-flex items-center gap-2 px-3 py-2 rounded-xl border border-gray-300/60 dark:border-white/10 hover:bg-white/60 dark:hover:bg-gray-800/60"
-       href="https://github.com/jarvas01/asr-framework-comparison"
-       target="_blank"
-       rel="noopener noreferrer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 fill-current">
-        <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.86 3.16 8.98 7.55 10.44.55.1.75-.24.75-.53v-1.87c-3.07.67-3.72-1.32-3.72-1.32-.5-1.28-1.22-1.62-1.22-1.62-1-.69.08-.68.08-.68 1.1.08 1.68 1.13 1.68 1.13.98 1.67 2.58 1.19 3.21.91.1-.71.38-1.19.69-1.46-2.45-.28-5.03-1.22-5.03-5.44 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.41.11-2.93 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 2.75-.37c.93 0 1.87.12 2.75.37 2.1-1.43 3.02-1.13 3.02-1.13.6 1.52.22 2.65.11 2.93.7.77 1.13 1.75 1.13 2.95 0 4.23-2.59 5.16-5.05 5.43.39.34.75 1.01.75 2.04v3.02c0 .29.2.64.76.53 4.38-1.46 7.54-5.58 7.54-10.44C23.25 5.48 18.27.5 12 .5z"/>
-      </svg>
-      GitHub Repository
-    </a>
-  </div>
-</article>
+  <main class="max-w-5xl mx-auto px-6 py-10">
+    <h2 class="text-2xl font-bold mb-3">Projects</h2>
+    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+      Selected ongoing and recent work, including student-led research and software projects.
+    </p>
 
-  </div>
-</main>
+    <!-- Faculty projects (optional) -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition">
+        <h3 class="text-lg font-semibold">Ontology Enrichment with LLMs</h3>
+        <p class="mt-2 text-gray-700">
+          Applying lexical, semantic, and knowledge-network similarity for concept placement and automatic enrichment.
+        </p>
+        <div class="mt-3">
+          <a class="text-kean-blue font-semibold hover:underline" href="publications.html">Related paper</a>
+        </div>
+      </div>
 
-<footer class="mt-16 py-10 border-t border-white/30 dark:border-white/10 text-sm">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <p>© <span id="year"></span> Navya Martin Kollapally. All rights reserved.</p>
-    <div class="flex gap-4 text-gray-600 dark:text-gray-300">
-      <a class="navlink" href="projects.html">Projects</a>
-      <a class="navlink" href="publications.html">Publications</a>
-      <a class="navlink" href="contact.html">Contact</a>
+      <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition">
+        <h3 class="text-lg font-semibold">Clinical Interface Terminology</h3>
+        <p class="mt-2 text-gray-700">
+          Using clinical NER and ML to curate an interface terminology enabling fast skimming of EHRs.
+        </p>
+        <div class="mt-3">
+          <a class="text-kean-blue font-semibold hover:underline" href="publications.html">Conference paper</a>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+    <!-- Student projects -->
+    <h2 class="text-2xl font-bold mt-10 mb-3">Student Projects</h2>
+
+    <div class="space-y-5">
+      <div class="border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition">
+        <h3 class="text-lg font-semibold">
+          ASR Framework Comparison (Multilingual Benchmarking)
+        </h3>
+        <p class="mt-2 text-gray-700">
+          Developed by <strong>Jonathan Argudo</strong>. A comprehensive research platform for comparing
+          Automatic Speech Recognition (ASR) frameworks across multiple languages, with emphasis on
+          low-resource language acoustic modeling performance.
+        </p>
+        <div class="mt-4">
+          <a
+            class="inline-flex items-center gap-2 bg-kean-blue text-white px-4 py-2 rounded-lg shadow hover:bg-blue-800 transition"
+            href="https://github.com/jarvas01/asr-framework-comparison"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-gray-200 text-sm text-gray-600 text-center py-6">
+    © <script>document.write(new Date().getFullYear())</script>
+    Kean University — Department of Computer Science • Navya Martin Kollapally
+  </footer>
 </body>
 </html>
